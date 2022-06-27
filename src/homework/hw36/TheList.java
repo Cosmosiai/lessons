@@ -134,7 +134,8 @@ public class TheList {
 //        цикл для фильтрации объектов и добавления их в список результатов поиска.
         for (Computer i : compList) {
 //            проверка на соответствие по цене
-            if ((i.getCost() > a && i.getCost() < b) || (i.getCost() < a && i.getCost() > b) || (a != 0 && b != 0)) {
+            if ((i.getCost() > a && i.getCost() < b) || (i.getCost() < a && i.getCost() > b) && (a != 0 && b != 0)) {
+                System.out.println(i.getCost());
 //                фильтр типа "с": 1 -комп, 2 - ноут, 3 - игнорирование фильра
                 if (c == 1 && i.getWhatIs().equals("PC")) {
 //                    вызов метода фильтрации по компании производителя и добавление резуьтата в список результатов
