@@ -14,6 +14,7 @@ public class Laptop extends Computer{
         this.newCost = campaign(20);
     }
 
+
     public int getNewCost() {
         return newCost;
     }

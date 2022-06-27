@@ -1,11 +1,10 @@
 package homework.hw36;
 
-import javax.print.DocFlavor;
+
 import java.util.Random;
 import java.util.Scanner;
 
 public abstract class Computer {
-    public int getDiag;
     private int cost;
     private String type;
     private String whatIs;
@@ -29,8 +28,8 @@ public abstract class Computer {
         return type;
     }
 
-    public int campaign(int procentage){
-        return (getCost())/100*(100-procentage);
+    public int campaign(int percentage){
+        return (getCost())/100*(100-percentage);
     }
 
     public static String randomType(){

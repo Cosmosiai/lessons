@@ -1,6 +1,8 @@
 package homework.hw36;
 
+
 public class PC extends Computer{
+
     private int diag;
     private final String whatIs = "PC";
 
@@ -12,6 +14,7 @@ public class PC extends Computer{
         super(cost, type);
         this.diag = diag;
     }
+
 
     public int getDiag() {
         return diag;
