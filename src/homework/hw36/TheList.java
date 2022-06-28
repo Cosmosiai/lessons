@@ -178,6 +178,7 @@ public class TheList {
                 System.out.println("индекс: " + i + "   цена: " + searchList.get(i).getCost()+"    тип: ноутбук     модель: "+searchList.get(i).getType());
             }
         }
+        start();
     }
 
 //    метод для филтрации по типу объекта и его доавление в список результатов
