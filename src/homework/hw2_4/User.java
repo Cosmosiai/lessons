@@ -12,11 +12,12 @@ public class User {
 
     public User(String fullName, String login, String password, int age, boolean isBlocked) {
         if (age < 0) {
-            System.out.println("there is error. try it second time. age must be more than 0");
-            this.age = sc.nextInt();
-        } else {
-            this.age = age;
+            while (age<0) {
+                System.out.println("there is error. try it second time. age must be more than 0");
+                age = sc.nextInt();
+            }
         }
+        this.age = age;
         this.fullName = fullName;
         this.login = login;
         this.password = password;
