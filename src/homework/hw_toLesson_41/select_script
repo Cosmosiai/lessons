@@ -1,0 +1,5 @@
+select c.coachname, c.salary, c.sporttype_id from lessons.coach c join "sport types" st on sporttype_id = st.id where c.salary >= 20000 order by c.salary desc ;
+select st.id, "SPORT TYPE" from lessons."sport types" st where "SPORT TYPE" ~'ball';
+select * from lessons.coach c where c.coachname ~'a';
+select * from lessons.coach c order by salary desc ;
+select * from lessons.coach c order by coachname asc ;
