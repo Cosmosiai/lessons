@@ -5,11 +5,13 @@ import java.util.Arrays;
 public class Milk extends Product{
     private String type;
     private int kg;
+    private String date;
 
-    public Milk(String name, int price, Compound[] compound, String type, int kg) {
+    public Milk(String name, int price, Compound[] compound, String type, int kg, String date) {
         super(name, price, compound);
         this.type = type;
         this.kg = kg;
+        this.date = date;
     }
 
     @Override
@@ -20,6 +22,7 @@ public class Milk extends Product{
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", compound=" + getCompound(compound) +
+                ", date="+date+
                 '}';
     }
 
