@@ -1,5 +1,7 @@
 package homework.hw27.hwA;
 
 public interface Thing {
-    public void action();
+    default void action(){
+        System.out.println("hello");
+    };
 }
