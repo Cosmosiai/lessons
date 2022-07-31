@@ -1,8 +1,8 @@
-package homework.hw36;
+package homework.ishw;
 
 import java.util.*;
 
-import static homework.hw36.Start.start;
+import static homework.ishw.Start.start;
 
 public class TheList {
 //    создаём список компьютеров

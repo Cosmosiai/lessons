@@ -1,6 +1,6 @@
-package homework.hw36;
+package homework.ishw;
 
-import static homework.hw36.TheList.*;
+import static homework.ishw.TheList.*;
 
 public class Start {
     public static void start(){
