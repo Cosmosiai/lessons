@@ -1,6 +1,4 @@
-package homework.hw36;
-
-import java.util.Random;
+package homework.ishw;
 
 public class Main {
     public static void main(String[] args) {
