@@ -1,7 +1,7 @@
 package homework.hw29;
 
 public class Flight{
-    int id=0;
+    static int id;
     String departureTime;
     String arrivalTime;
     Aircraft aircraft;
