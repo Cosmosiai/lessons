@@ -3,16 +3,15 @@ package homework.hw29;
 public abstract class Aircraft {
     private static int id;
     private String model;
-    boolean type;
+    private boolean type;
 
-    public Aircraft(int id, String model, boolean type) {
-        this.id = id;
+    public Aircraft(String model, boolean type) {
         this.model = model;
         this.type = type;
-        id++;
+        this.id++;
     }
 
-    public static int getId() {
+    public  int getId() {
         return id;
     }
 
@@ -22,5 +21,13 @@ public abstract class Aircraft {
 
     public boolean isType() {
         return type;
+    }
+
+    @Override
+    public String toString() {
+        return "Aircraft{" +
+                "model='" + model + '\'' +
+                ", type=" + type +
+                '}';
     }
 }
