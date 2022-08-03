@@ -16,5 +16,7 @@ public class Main {
             d.readCollar();
             counter++;
         }
+        System.out.println("hello");
     }
+
 }
