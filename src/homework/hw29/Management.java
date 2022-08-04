@@ -28,7 +28,8 @@ public class Management {
     public static void newFlight(LinkedList<Flight>flights){
         System.out.println("do you want to add new plane? \n1. yes\n2. no");
         int y=a.nextInt();
-
+        Flight newFlight = null;
+        boolean newFlightStaus=false;
         System.out.println("set departure time");
         a.nextLine();
         String departureTime =a.nextLine();
@@ -41,18 +42,24 @@ public class Management {
             Flight flight = new Flight(departureTime,arrivalTime,aircraft,status);
             flights.add(flight);
         }else if (y==2){
-            showAll(flights);
             System.out.println("choose id");
+            showAll(flights);
             int id= a.nextInt();
             for(Flight i:flights){
                 if (i.aircraft.getId()==id){
                     Flight flight = new Flight(departureTime,arrivalTime,i.aircraft,status);
-                    flights.add(flight);
+                    newFlight = flight;
+                    newFlightStaus=true;
                 }
             }
         }else{
             newFlight(flights);
         }
+        if (newFlightStaus==true){
+            flights.add(newFlight);
+            newFlightStaus=false;
+        }
+        
         menu();
     }
 
@@ -72,7 +79,6 @@ public class Management {
             System.out.println(i.toString());
             System.out.println();
         }
-        menu();
     }
 
     public static void menu() {
@@ -86,8 +92,10 @@ public class Management {
             newFlight(Management.flights);
         }else if(chose==2){
             showAll(Management.flights);
+            menu();
         } else if (chose==3) {
             search(Management.flights);
+            menu();
         } else if (chose==4) {
         }
         else {

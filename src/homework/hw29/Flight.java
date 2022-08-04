@@ -1,7 +1,8 @@
 package homework.hw29;
 
 public class Flight{
-    static int id;
+    static int counter=0;
+    int id;
     String departureTime;
     String arrivalTime;
     Aircraft aircraft;
@@ -10,11 +11,12 @@ public class Flight{
     Tu154 t;
 
     public Flight(String departureTime,String arrivalTime, Aircraft aircraft, String status) {
-        this.id++;
+        this.counter++;
         this.departureTime = departureTime;
         this.aircraft = aircraft;
         this.status = status;
         this.arrivalTime=arrivalTime;
+        id=counter;
     }
 
     public int getId() {

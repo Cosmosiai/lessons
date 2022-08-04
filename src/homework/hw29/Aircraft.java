@@ -1,14 +1,16 @@
 package homework.hw29;
 
 public abstract class Aircraft {
-    private static int id;
+    private static int counter=0;
+    private int id;
     private String model;
     private boolean type;
 
     public Aircraft(String model, boolean type) {
+        this.counter++;
         this.model = model;
         this.type = type;
-        this.id++;
+        this.id=counter;
     }
 
     public  int getId() {
