@@ -1,0 +1,1 @@
+create table exam.news(id serial unique not null primary key, title varchar(100) not null, news_text varchar not null, pubdate date);
