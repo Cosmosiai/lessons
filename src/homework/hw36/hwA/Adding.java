@@ -39,4 +39,28 @@ public class Adding {
             }
         }
     }
+
+    public void deleteByIdarr(ArrayList<Cat> list, int howMuch, int choose){
+
+        for(int i=0;i<howMuch;i++) {
+            if (choose == 1) {
+                list.remove(i);
+            } else if (choose == 2) {
+                list.remove((list.size() / 2));
+            }
+        }
+    }
+
+    public void deleteByIdLink(LinkedList<Cat> list, int howMuch, int choose){
+        int a = list.size();
+        for (int i = 0; i<howMuch; i++){
+            if (choose == 1){
+                list.remove(i);
+            } else if (choose==2) {
+                list.remove(list.size()/2);
+            }
+        }
+    }
+
+
 }
